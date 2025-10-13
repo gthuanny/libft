@@ -6,7 +6,7 @@ This project has been doing currently at 42 Porto. In october 2025.
 > *Recreate the foundations of the C standard library and build your own toolbox for future 42 projects.*
 
 ![Language](https://img.shields.io/badge/language-C-blue.svg)
-![Status](https://img.shields.io/badge/status-in-progress.svg)
+![Status](https://img.shields.io/badge/status-in_progress-blue.svg)
 ![School](https://img.shields.io/badge/42-Network-000000.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
