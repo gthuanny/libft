@@ -112,6 +112,13 @@ typedef struct s_list
 - ft_lstiter      - Applies a function to each node’s content.
 - ft_lstmap       - Creates a new list by applying a function to each node’s content.
 
+  | Section              | Functions           |
+  | -------------------- | ------------------- |
+  | Part 1 – Libc        | 23                  |
+  | Part 2 – Additional  | 11                  |
+  | Bonus – Linked Lists | 9                   |
+  | **TOTAL**            | 🎯 **43 functions** |
+
 🧪 Testing
 
 Even though tests are not graded, they are essential for debugging and validating your work.
@@ -139,6 +146,8 @@ Memory leaks, segmentation faults, or norm errors will result in a 0.
 - Understand the difference between memcpy and memmove.
 - Be able to explain how malloc and free work.
 - Always handle null pointers and boundary cases.
+
+
 
 **🌱 Additional Notes**
 
