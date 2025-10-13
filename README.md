@@ -1,4 +1,5 @@
 # Libft
+[subject.pdf](https://github.com/user-attachments/files/22882936/libft.en.subject.pdf)
 
 This project has been doing currently at 42 Porto. In october 2025.
 # 📚 Libft – Your Very First C Library
