@@ -1,5 +1,5 @@
 # Libft
-[subject.pdf](https://github.com/user-attachments/files/22882936/libft.en.subject.pdf)
+`[subject.pdf](https://github.com/user-attachments/files/22882936/libft.en.subject.pdf)`
 
 This project has been doing currently at 42 Porto. In october 2025.
 # 📚 Libft – Your Very First C Library
@@ -126,7 +126,7 @@ Even though tests are not graded, they are essential for debugging and validatin
 You can use the following public testers to check your implementation:
 
 # Clone and run a tester
-git clone https://github.com/alelievr/libft-unit-test.git
+
 cd libft-unit-test
 make
 ./run_test
