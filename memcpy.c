@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 18:12:01 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/21 10:51:06 by gde-cast         ###   ########.fr       */
+/*   Created: 2025/10/21 11:00:29 by gde-cast          #+#    #+#             */
+/*   Updated: 2025/10/21 11:04:02 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	unsigned int	i;
+	char			*dst;
+	char			*source;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	dst = (char *)dest;
+	source = (char *)src;
+	if (dest == src)
+		return (dest);
+	while (i < n)
+	{
+		dst[i] = source[i];
 		i++;
-	if (i >= n)
-		return (0);
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	}
+	return (dest);
 }

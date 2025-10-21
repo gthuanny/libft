@@ -6,18 +6,10 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 18:09:00 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/20 18:10:20 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/21 10:50:23 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*📘 Descrição em português
-
-ft_strrchr faz o mesmo que ft_strchr, mas retorna a última ocorrência do caractere c.
-Útil quando você quer o último “/” em um caminho de arquivo, por exemplo.
-
-📗 English description
-
-ft_strrchr returns a pointer to the last occurrence of character c in string s.*/
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

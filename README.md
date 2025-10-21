@@ -158,4 +158,5 @@ You’ll use this library in many future 42 projects — including get_next_line
 
 👩‍💻 Gabrielle @gthuanny
 📍 42 Porto
-📧 gabithuanny1@gmail.com
+📧 gabithuanny1r
+@gmail.com

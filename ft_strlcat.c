@@ -6,19 +6,10 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 17:40:38 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/20 17:49:29 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/21 10:49:22 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*📘 Descrição em português
-
-ft_strlcat concatena (anexa) a string src ao final de dst, garantindo que o total não exceda dstsize.
-Retorna o tamanho total que teria sido criado, mesmo que truncado.
-É útil para juntar partes de texto com segurança.
-
-📗 English description
-
-ft_strlcat appends the string src to the end of dst, ensuring the final string is null-terminated and within dstsize.*/
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
