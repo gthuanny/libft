@@ -6,9 +6,11 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:03:34 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/22 15:55:28 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:58:27 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Split string s into an array of strings using delimiter c. Returns a NULL-terminated array of allocated strings (NULL on allocation failure). Consecutive delimiters produce empty segments that are typically skipped.*/
 
 #include "libft.h"
 
