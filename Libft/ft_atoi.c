@@ -6,7 +6,7 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 11:50:31 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/22 14:22:11 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:15:23 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_atoi(const char *nptr)
 	{
 		if (nptr[i] == '-')
 			signal *= -1;
-		i++,
+		i++;
 	}
 		while (nptr[i] >= '0' && nptr[i] <= '9')
 		{
@@ -40,7 +40,7 @@ int	ft_atoi(const char *nptr)
 	return (result * signal);
 }
 
-#include <stdlib> 
+/*#include <stdlib> 
 
 int main(void)
 {
@@ -50,4 +50,4 @@ int main(void)
 	i = ft_atoi(nptr);
 
 	printf("d%\n",i);
-}
+}*/
