@@ -1,33 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/28 15:36:27 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/28 15:58:21 by gde-cast         ###   ########.fr       */
+/*   Created: 2025/10/29 16:06:10 by gde-cast          #+#    #+#             */
+/*   Updated: 2025/10/29 16:08:12 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*Apply function f to each character of s, passing the index 
+and pointer to the character (in-place modification).*/
+
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	if (!s)
-		return ;
 	while (s[i])
 	{
-		write(fd, &s[i], 1);
+		f(i, &s[i]);
 		i++;
 	}
 }
 /*
- * int	main(void)
- * {
- * 	ft_putstr_fd("teste", 1);
- * 	}
- * 	*/
+static void	nextcharacter(unsigned int index, char	*c)
+{
+	(void)index;
+	*c += 1;
+}
+
+#include <stdio.h>
+
+int	main (void)
+{
+	char str[] = "teste";
+    ft_striteri(str, nextcharacter);
+	printf("%s", str);
+	
+    return (0);
+}
+*/
