@@ -6,7 +6,7 @@
 /*   By: gde-cast <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 15:48:26 by gde-cast          #+#    #+#             */
-/*   Updated: 2025/10/28 15:57:16 by gde-cast         ###   ########.fr       */
+/*   Updated: 2025/11/04 15:58:37 by gde-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Split string s into an array of strings using delimiter c.
@@ -17,9 +17,9 @@ segments that are typically skipped.*/
 #include "libft.h"
 
 /*
-** Counts the number of words (segments) 
+Counts the number of words (segments) 
 in string 's' separated by delimiter 'c'.
-** Consecutive delimiters are ignored.
+Consecutive delimiters are ignored.
 */
 static size_t	ft_countwords(char const *s, char c)
 {
@@ -47,8 +47,8 @@ static size_t	ft_countwords(char const *s, char c)
 }
 
 /*
-** Calculates the length of the next segment (word) in string 's'
-** until the separator 'c' or the end of the string.
+Calculates the length of the next segment (word) in string 's'
+until the separator 'c' or the end of the string.
 */
 static size_t	ft_seglen(char const *s, char separator)
 {
@@ -61,8 +61,8 @@ static size_t	ft_seglen(char const *s, char separator)
 }
 
 /*
-** Frees the allocated memory for 'result' in case of allocation failure
-** and returns NULL.
+Frees the allocated memory for 'result' in case of allocation failure
+and returns NULL.
 */
 static char	**ft_free(char **result, size_t len_strings)
 {
@@ -79,11 +79,11 @@ static char	**ft_free(char **result, size_t len_strings)
 }
 
 /*
-** Fills the allocated array 'result' with the segments (words)
-** from string 's', separated by 'c'.
+Fills the allocated array 'result' with the segments (words)
+from string 's', separated by 'c'.
 */
-static char	**fill_array(char **result, char separator, char const *s,
-		size_t len_string)
+static char	
+**fill_array(char **result, char separator, char const *s, size_t len_string)
 {
 	size_t	i;
 	size_t	words;
@@ -113,11 +113,11 @@ static char	**fill_array(char **result, char separator, char const *s,
 }
 
 /*
-** Splits string 's' into an array of strings 
+Splits string 's' into an array of strings 
 using delimiter 'c'.
-** Returns a NULL-terminated array of allocated 
+Returns a NULL-terminated array of allocated 
 strings (NULL on allocation failure).
-** Consecutive delimiters produce empty segments that are skipped.
+Consecutive delimiters produce empty segments that are skipped.
 */
 char	**ft_split(char const *s, char c)
 {

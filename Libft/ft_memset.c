@@ -29,8 +29,8 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 int main()
 {
 	char str[20];
@@ -44,5 +44,4 @@ int main()
 	printf("result after ft_memset: %s\n", str);
 
 	return 0;
-}
-*/
+}*/

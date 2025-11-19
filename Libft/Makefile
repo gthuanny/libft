@@ -51,7 +51,17 @@ FILES = ft_isalpha.c \
 	ft_strdup.c \
 	ft_calloc.c
 
+BONUS_FILES = ft_lstnew_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstadd_back_bonus.c \
+	    ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstiter_bonus.c \
+		
 OBJS = $(FILES:.c=.o)
+BONUS_OBJS = $(BONUS_FILES:.c=.o)
 
 # ----------------------------- #
 #            RULES              #
@@ -66,12 +76,14 @@ $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
-
+bonus: $(BONUS_OBJS) $(OBJS)
+	$(AR) $(NAME) $(BONUS_OBJS) $(OBJS)
+	
 re: fclean all
 
 .PHONY: all clean fclean re

@@ -28,6 +28,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	i = 0;
 	bytes = nmemb * size;
+	if (size != 0 && bytes / size != nmemb)
+		return (NULL);
 	str = malloc(bytes);
 	if (str == 0)
 		return (NULL);
